@@ -4,15 +4,15 @@
 ## This script copied from https://github.com/webpro/dotfiles/blob/master/install.sh
 ####################################################
 
-## Get current dir (so run this script from anywhere)
+## Get current dir (so run this script from anywhere) 
 
 export DOTFILES_DIR
-DOTFILES_DIR="$( CD "$( DIRNAME "${BASH_SOURCE[0]}" )" && PWD )" # THE FULL DIRECTORY NAME OF THE SCRIPT NO MATTER WHERE IT IS BEING CALLED FROM
+DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" # the full directory name of the script no matter where it is being called from
 
 
 ## Update dotfiles itself first
 
-[ -d "$DOTFILES_DIR/.git" ] && git --work-tree="$DOTFILES_DIR" --git-dir="DOTFILES_DIR/.git" pull origin master
+[ -d "$DOTFILES_DIR/.git" ] && git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master
 
 
 ## Create symlinks for dotfiles in home directory
