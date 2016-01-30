@@ -7,7 +7,7 @@
 ## Get current dir (so run this script from anywhere)
 
 export DOTFILES_DIR
-DOTFILES_DIR = "$( CD "$( DIRNAME "${BASH_SOURCE[0]}" )" && PWD )" # THE FULL DIRECTORY NAME OF THE SCRIPT NO MATTER WHERE IT IS BEING CALLED FROM
+DOTFILES_DIR="$( CD "$( DIRNAME "${BASH_SOURCE[0]}" )" && PWD )" # THE FULL DIRECTORY NAME OF THE SCRIPT NO MATTER WHERE IT IS BEING CALLED FROM
 
 
 ## Update dotfiles itself first
