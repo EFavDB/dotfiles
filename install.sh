@@ -24,5 +24,5 @@ ln -sfv "$DOTFILES_DIR/runcom/.bashrc" ~
 
 ## Package managers and packages
 
-#. "$DOTFILES_DIR/install/apt-get.sh"
+. "$DOTFILES_DIR/install/apt-get.sh"
 #. "$DOTFILES_DIR/install/conda.sh"
