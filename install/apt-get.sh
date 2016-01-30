@@ -6,7 +6,7 @@ apps=(
     imagemagick
 )
 
-apt-get install "${apps[@]}"
+sudo apt-get install "${apps[@]}"
 
 # miniconda
 
