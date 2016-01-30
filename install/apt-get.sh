@@ -2,17 +2,21 @@
 APT_PATH="/etc/apt/sources.list.d"
 SRC_LIST="official-source-repositories.list"
 
-# Enable source code repositories
-# if distributor is LinuxMint and source repo doesn't exist (or is empty)
-if [ -n "$(echo $(lsb_release -i) | grep "LinuxMint")" ] && [ ! -s "$APT_PATH/$SRC_LIST" ]; then
+## Enable/define official source code repositories if distributor is LinuxMint
+if [ -n "$(echo $(lsb_release -i) | grep "LinuxMint")" ]; then
 
     CODENAME_MINT="$(lsb_release -sc)"
-    echo $CODENAME_MINT
+    #echo $CODENAME_MINT #e.g. rosa
 
     CODENAME_UBUNTU="$(echo $(lsb_release -uc) | awk -F' ' '{print $2}')"
-    echo $CODENAME_UBUNTU
+    #echo $CODENAME_UBUNTU #e.g. trusty
 
-    cat <<EOF >> "$APT_PATH/$SRC_LIST"
+    ## if apt-get src list already exists, then back it up before overwriting
+    if [ -s "$APT_PATH/$SRC_LIST" ]; then
+	mv "$APT_PATH/$SRC_LIST" "$APT_PATH/$SRC_LIST.backup"
+    fi
+       
+    cat <<EOF > "$APT_PATH/$SRC_LIST"
 deb-src http://packages.linuxmint.com $CODENAME_MINT main upstream import
 
 deb-src http://extra.linuxmint.com $CODENAME_MINT main
@@ -23,10 +27,12 @@ deb-src http://archive.ubuntu.com/ubuntu $CODENAME_UBUNTU-updates main restricte
 deb-src http://security.ubuntu.com/ubuntu/ $CODENAME_UBUNTU-security main restricted universe multiv$
 deb-src http://archive.canonical.com/ubuntu/ $CODENAME_UBUNTU partner
 EOF
+
+    ## to do: add repo for virtualbox to sources.list.d
 fi
 
 
-# install packages
+## install packages
 
 apps=(
     tree
