@@ -13,12 +13,19 @@ if [ -z "$(apt-cache policy emacs24 | grep "Candidate" | grep "24.4")" ]; then
     if [ $? -eq 0 ]; then
 	echo "*****emacs24 dependencies built!*****"
 
+	if [ -d ~/Downloads ]; then
+	    cd ~/Downloads
+	else
+	    mkdir ~/Downloads
+	    cd ~/Downloads
+	fi
+	
 	wget $EMACS_URL && tar -xf emacs-24.4.tar.* && cd emacs-24.4
 	./configure && make && sudo make install
-	rm emacs-24.4.tar.xz
+	rm emacs-24.4.tar.*
 
 	echo "*****installed emacs24.4*****"
-	cd $PWD
+	cd $CURR_DIR
     fi
 else
     echo "emacs 24.4 is available in ubuntu repo...\n installing with apt-get."
