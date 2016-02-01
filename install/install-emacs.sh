@@ -8,10 +8,9 @@ if [ -z "$(apt-cache policy emacs24 | grep "Candidate" | grep "24.4")" ]; then
     echo "emacs 24.4 is not available in ubuntu repo."
     echo "download and build from source."
 
-    sudo apt-get build-dep emacs24
-    
     # install required dependencies
-    if [ $? -eq 0]; then
+    sudo apt-get build-dep emacs24
+    if [ $? -eq 0 ]; then
 	echo "*****emacs24 dependencies built!*****"
 
 	wget $EMACS_URL && tar -xf emacs-24.4.tar.* && cd emacs-24.4
