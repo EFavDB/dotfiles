@@ -44,7 +44,7 @@ sudo apt-get update
 sudo apt-get install "${apps[@]}"
 
 # emacs24.4
-source install-emacs.sh
+. "$DOTFILES_DIR/install/install-emacs.sh"
 
 # miniconda
 
