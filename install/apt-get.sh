@@ -37,14 +37,16 @@ fi
 apps=(
     tree
     imagemagick
+    build-essential
 )
 
 sudo apt-get update
 sudo apt-get install "${apps[@]}"
 
-# miniconda
+# emacs24.4
+source install-emacs.sh
 
-# build-essential, emacs24.4
+# miniconda
 
 # automake, texlive-full,
 
