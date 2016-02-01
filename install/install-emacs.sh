@@ -1,6 +1,10 @@
 # check emacs version in ubuntu repo.  If version 24.4 is not available,
 # download source and compile.
 
+## If emacs is already installed, skip installation
+apt-cache show emacs24 &> /dev/null
+[ $? -eq 0 ] && return
+
 EMACS_URL="http://ftp.gnu.org/gnu/emacs/emacs-24.4.tar.gz"
 CURR_DIR=$PWD
 
