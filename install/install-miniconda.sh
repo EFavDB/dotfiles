@@ -23,6 +23,6 @@ else
 fi
 
 wget "${BASE_URL}${MINICONDA_SH}"
-bash $MINICONDA_SH
+bash $MINICONDA_SH -b
 
 cd $CURR_DIR
