@@ -7,9 +7,6 @@
 [ -z "$PS1" ] && return
 
 
-DOTFILES_DIR = "$HOME/.dotfiles"
-
-
 # Source dotfiles for setting functions, alias, ...
 
 for DOTFILE in "$DOTFILES_DIR"/system/.{functions}; do
