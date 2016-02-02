@@ -47,6 +47,7 @@ sudo apt-get install "${apps[@]}"
 . "$DOTFILES_DIR/install/install-emacs.sh"
 
 # miniconda
+. "$DOTFILES_DIR/install/install-miniconda.sh"
 
 # automake, texlive-full,
 
