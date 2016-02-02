@@ -2,4 +2,4 @@
 # With this path order, calls to python will default to the
 # Miniconda version.
 
-export PATH="/home/cathy/miniconda3/bin:$PATH"
+export PATH="/home/$USER/miniconda3/bin:$PATH"
