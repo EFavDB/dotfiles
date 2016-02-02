@@ -12,7 +12,7 @@ DOTFILES_DIR = "$HOME/.dotfiles"
 
 # Source dotfiles for setting functions, alias, ...
 
-for DOTFILE IN "$DOTFILES_DIR"/system/.{functions}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.{functions}; do
     [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
