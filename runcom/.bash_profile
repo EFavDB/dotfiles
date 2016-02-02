@@ -7,11 +7,6 @@
 [ -z "$PS1" ] && return
 
 
-# source .profile (which sources .bashrc and adds user's private
-# bin to path)
-[[ -s $HOME/.profile ]] && source $HOME/.profile
-
-
 # Resolve DOTFILES_DIR (assuming ~/.dotfiles on distros without readlink and/or $BASH_SOURCE/$0)
 
 READLINK=$(which greadlink || which readlink)
@@ -28,10 +23,20 @@ else
 fi
 
 
+# Export
+export DOTFILES_DIR
+
+
+# source .profile (which sources .bashrc and adds user's private
+# bin to path)
+[[ -s $HOME/.profile ]] && source $HOME/.profile
+
+
 # Source the dotfiles containing environment variables or other
 # configuration settings (order matters)
 
-for DOTFILE in "$DOTFILES_DIR"/system/.{path}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.path; do
+# for DOTFILE in "$DOTFILES_DIR"/system/.{path, file2, file3}; do    
     [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
@@ -39,8 +44,3 @@ done
 # Clean up
 
 unset DOTFILE
-
-
-# Export
-
-export DOTFILES_DIR
