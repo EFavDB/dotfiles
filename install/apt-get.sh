@@ -43,11 +43,5 @@ apps=(
 sudo apt-get update
 sudo apt-get install "${apps[@]}"
 
-# emacs24.4
-. "$DOTFILES_DIR/install/install-emacs.sh"
-
-# miniconda
-. "$DOTFILES_DIR/install/install-miniconda.sh"
-
 # automake, texlive-full,
 

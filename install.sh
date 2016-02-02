@@ -22,7 +22,9 @@ ln -sfv "$DOTFILES_DIR/runcom/.profile" ~
 ln -sfv "$DOTFILES_DIR/runcom/.bashrc" ~
 
 
-## Package managers and packages
+## Package managers and packages (order matters)
 
 . "$DOTFILES_DIR/install/apt-get.sh"
-#. "$DOTFILES_DIR/install/conda.sh"
+. "$DOTFILES_DIR/install/install-emacs.sh"
+. "$DOTFILES_DIR/install/install-miniconda.sh"
+. "$DOTFILES_DIR/install/conda.sh"
