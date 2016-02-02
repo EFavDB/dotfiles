@@ -18,7 +18,7 @@ DOTFILES_DIR = "$HOME/.dotfiles"
 # Source the dotfiles containing environment variables or other
 # configuration settings (order matters)
 
-for DOTFILE IN "$DOTFILES_DIR"/system/.{path}; do
+for DOTFILE in "$DOTFILES_DIR"/system/.{path}; do
     [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
