@@ -8,11 +8,11 @@ The installation script automates the installation of
 
 On a fresh installation of Ubuntu, clone with Git
 
-`git clone https://github.com/frangipane/dotfiles.git`
+`git clone https://github.com/frangipane/.dotfiles.git`
 
 Then run installation script (script can be run from anywhere)
 
-`source dotfiles/install.sh`
+`source .dotfiles/install.sh`
 
 
 ## Resources
