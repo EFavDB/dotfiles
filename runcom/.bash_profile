@@ -12,9 +12,6 @@
 [[ -s $HOME/.profile ]] && source $HOME/.profile
 
 
-DOTFILES_DIR = "$HOME/.dotfiles"
-
-
 # Source the dotfiles containing environment variables or other
 # configuration settings (order matters)
 
