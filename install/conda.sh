@@ -4,6 +4,7 @@ packages=(
     pandas
     scipy
     scikit-learn
+    ipython
 )
 
 for item in ${packages[*]}; do
