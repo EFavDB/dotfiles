@@ -35,8 +35,7 @@ export DOTFILES_DIR
 # Source the dotfiles containing environment variables or other
 # configuration settings (order matters)
 
-for DOTFILE in "$DOTFILES_DIR"/system/.path; do
-# for DOTFILE in "$DOTFILES_DIR"/system/.{path, file2, file3}; do    
+for DOTFILE in "$DOTFILES_DIR"/system/.{path, env}; do
     [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
