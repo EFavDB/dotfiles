@@ -10,7 +10,7 @@
 # Source dotfiles for setting functions, alias, ...
 
 for DOTFILE in "$DOTFILES_DIR"/system/.functions; do
-#    for DOTFILE in "$DOTFILES_DIR"/system/.{functions, alias}; do
+#    for DOTFILE in "$DOTFILES_DIR"/system/.{functions,alias}; do
     [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
