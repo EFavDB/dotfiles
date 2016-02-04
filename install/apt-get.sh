@@ -38,6 +38,7 @@ apps=(
     tree
     imagemagick
     build-essential
+    mercurial
 )
 
 sudo apt-get update
