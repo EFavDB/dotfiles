@@ -5,6 +5,9 @@ packages=(
     scipy
     scikit-learn
     ipython
+    ipython-notebook
+    jedi   # for emacs
+    flake8 # for emacs
 )
 
 for item in ${packages[*]}; do
