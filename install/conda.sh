@@ -15,3 +15,8 @@ for item in ${packages[*]}; do
     echo "installing ${item}"
     conda install --yes ${item}
 done
+
+# install from r channel
+conda install --yes -c r r-essentials
+echo "================================================="
+echo "installing r-essentials"
