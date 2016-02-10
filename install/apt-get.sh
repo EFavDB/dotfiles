@@ -38,7 +38,7 @@ apps=(
     tree
     imagemagick
     build-essential
-    python3-markdown
+    pandoc
 )
 
 sudo apt-get update
