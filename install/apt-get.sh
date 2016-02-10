@@ -38,7 +38,7 @@ apps=(
     tree
     imagemagick
     build-essential
-    mercurial
+    python3-markdown
 )
 
 sudo apt-get update
