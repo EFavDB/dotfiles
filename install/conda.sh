@@ -1,11 +1,15 @@
 packages=(
     matplotlib
+    ggplot
     numpy
     pandas
     scipy
     scikit-learn
+    jupyter
     ipython
     ipython-notebook
+    statsmodels
+    beautifulsoup4
     jedi   # for emacs
     flake8 # for emacs
 )
