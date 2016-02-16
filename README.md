@@ -1,7 +1,7 @@
 ## .files 
 
 These are my dotfiles, i.e. configurations of shell and other
-programs, targeted for Ubuntu (Linux Mint 17.3 Cinnamon 64-bit).
+programs, targeted for Ubuntu (I'm on Linux Mint 17.3 Cinnamon 64-bit).
 The setup and workflow is covered in detail in
 [this blog post](http://efavdb.com/dotfiles).
 
