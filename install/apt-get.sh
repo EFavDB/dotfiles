@@ -39,10 +39,10 @@ apps=(
     imagemagick
     build-essential
     pandoc
+    automake
+    texlive-full
 )
 
 sudo apt-get update
 sudo apt-get install "${apps[@]}"
-
-# automake, texlive-full,
 
