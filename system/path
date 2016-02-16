@@ -1,0 +1,5 @@
+# Add path (Miniconda3 3.19.0)
+# With this path order, calls to python will default to the
+# Miniconda version.
+
+export PATH="/home/$USER/miniconda3/bin:$PATH"
