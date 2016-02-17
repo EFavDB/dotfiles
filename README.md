@@ -72,5 +72,6 @@ Then run installation script (script can be run from anywhere)
 * [Dotfiles for peace of mind](http://efavdb.com/dotfiles) -- step-by-step guide through this repo
 * [Getting started with dotfiles](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789#.7l2hnwca2) -- dotfiles how-to
 * https://github.com/webpro/dotfiles -- inspiration for structuring dotfiles and automating installation
-
+* [My Python Environment Workflow with Conda](http://stiglerdiet.com/blog/2015/Nov/24/my-python-environment-workflow-with-conda/)
+  -- Tim Hopper's workflow, implemented in this repo
 
