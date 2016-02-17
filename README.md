@@ -1,9 +1,9 @@
 ## .files 
 
-These are my dotfiles, i.e. configurations of shell and other
-programs, targeted for Ubuntu (I'm on Linux Mint 17.3 Cinnamon 64-bit).
-The setup and workflow is covered in detail in
-[this blog post](http://efavdb.com/dotfiles).
+These are dotfiles, i.e. configurations of shell and other programs,
+to set up a basic data science working environment (developed on Linux
+Mint 17.3 Cinnamon 64-bit).  The setup and workflow is covered in
+detail in [this blog post](http://efavdb.com/dotfiles).
 
 ## Warning
 
@@ -60,11 +60,11 @@ On a fresh installation of Ubuntu, first install git:
 
 Then clone this repo with Git
 
-`git clone https://github.com/frangipane/.dotfiles.git`
+`git clone https://github.com/efavdb/dotfiles.git`
 
 Then run installation script (script can be run from anywhere)
 
-`source .dotfiles/install.sh`
+`source dotfiles/install.sh`
 
 
 ## Resources
