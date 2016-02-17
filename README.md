@@ -78,7 +78,9 @@ Then run the installation script:
   the changes to .profile to take effect.
 - Type `conda list` to check that all the packages were successfully
   installed by `conda.sh`.  If they weren't (e.g. due to a failed
-  internet connection), you can run `install.sh` again: `source 
+  internet connection), you can run `install.sh` again.  Note, the
+  list output by `conda list` should look a lot longer than that in
+  `conda.sh` because of automatically installed dependencies.
 - `install.sh` should be idempotent, so you can load it again if needed, e.g.
 
 
