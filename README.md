@@ -1,9 +1,12 @@
 ## .files 
 
 These are dotfiles, i.e. configurations of shell and other programs,
-to set up a basic data science working environment (developed on Linux
-Mint 17.3 Cinnamon 64-bit).  The setup and workflow is covered in
-detail in [this blog post](http://efavdb.com/dotfiles).
+to set up a basic data science working environment.  The setup and
+workflow is covered in detail in
+[this blog post](http://efavdb.com/dotfiles).
+
+Tested on Linux Mint 17.3 Cinnamon 64-bit and Ubuntu 14.04 (Trusty
+Tahr) 32-bit.
 
 ## Warning
 
@@ -62,9 +65,21 @@ Then clone this repo with Git
 
 `git clone https://github.com/efavdb/dotfiles.git`
 
-Then run installation script (script can be run from anywhere)
+Then run the installation script:
 
 `source dotfiles/install.sh`
+
+
+## Tips
+
+- Type `conda list` in your shell to check if the miniconda path has
+  been prepended to the PATH variable.  If the command is not
+  recognized, try logging out and back into your system in order for
+  the changes to .profile to take effect.
+- Type `conda list` to check that all the packages were successfully
+  installed by `conda.sh`.  If they weren't (e.g. due to a failed
+  internet connection), you can run `install.sh` again: `source 
+- `install.sh` should be idempotent, so you can load it again if needed, e.g.
 
 
 ## Resources
@@ -74,4 +89,4 @@ Then run installation script (script can be run from anywhere)
 * https://github.com/webpro/dotfiles -- inspiration for structuring dotfiles and automating installation
 * [My Python Environment Workflow with Conda](http://stiglerdiet.com/blog/2015/Nov/24/my-python-environment-workflow-with-conda/)
   -- Tim Hopper's workflow, implemented in this repo
-
+* [Emacs repo cloned by this setup](https://github.com/frangipane/emacs)
