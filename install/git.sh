@@ -1,6 +1,6 @@
 ## autoenv - automatically activate virtual environment when you
 ## cd into a directory containing a .env file (with activation instructions)
-[ -d /opt/autoenv ] || git clone git://github.com/kennethreitz/autoenv.git /opt/autoenv
+[ -d /opt/autoenv ] || sudo git clone git://github.com/kennethreitz/autoenv.git /opt/autoenv
 
 
 ## emacs
