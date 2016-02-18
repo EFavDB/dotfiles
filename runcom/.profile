@@ -27,6 +27,8 @@ else
     return # `exit 1` would quit the shell itself
 fi
 
+export DOTFILES_DIR
+
 #==================================================
 # Load paths
 
