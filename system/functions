@@ -14,7 +14,7 @@ function conda-env-file {
   foldername=$(basename $PWD)
 
   if [ ! -f $condaenvfilename ]; then
-    printf "name: $foldername\ndependencies:\n- pip\n- python" > $condaenvfilename
+    printf "name: $foldername\ndependencies:\n- pip\n- python\n- jedi\n- flake8" > $condaenvfilename
     echo "$condaenvfilename created."
   else
     echo "$condaenvfilename already exists."
